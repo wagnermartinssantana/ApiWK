@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	  <title>Cadastro</title>
+	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	  <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+</head>
+
+<header>
+	<nav>
+
+	  <div class="nav-wrapper">
+		<a href="/menu" class="brand-logo">Menu</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+		  <li><a href="/pessoas" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Lista de Pessoas</a></li>
+		<li><a href="/cadastrarPessoa" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Cadastrar Pessoas</a></li>
+		</ul>
+	  </div>
+	</nav>
+</header>
+
+
+
+<body>
+
+	<h1>Cadastro de Doadores:</h1>
+	<h3><a href="/pessoas" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Voltar</a></h3>
+	<form class="container" method="post">
+			Nome: <input type="text" value"" name="nome"/> <br/>
+			CPF: <input type="text" value"" name="cpf"/> <br/>
+			RG: <input type="text" value"" name="rg"/> <br/>
+			Data de Nascimento: <input type="date" value"" name="data_nasc"/> <br/>
+			Sexo: <input type="text" value"" name="sexo"/><br/>
+			Nome da Mãe: <input type="text" value"" name="mae"/><br/>
+			Nome do Pai: <input type="text" value"" name="pai"/><br/>
+			Email: <input type="text" value"" name="email"/><br/>
+			CEP: <input type="text" value"" name="cep"/><br/>
+			Endereço: <input type="text" value"" name="endereco"/><br/>
+			Numero: <input type="text" value"" name="numero"/><br/>
+			Bairro: <input type="text" value"" name="bairro"/><br/>
+			Cidade: <input type="text" value"" name="cidade"/><br/>
+			Estado: <input type="text" value"" name="estado"/><br/>
+			Telefone Fixo: <input type="text" value"" name="telefone_fixo"/><br/>
+			Celular: <input type="text" value"" name="celular"/><br/>
+			Altura: <input type="text" value"" name="altura"/><br/>
+			Peso: <input type="text" value"" name="peso"/><br/>
+			Tipo Sanguineo: <input type="text" value"" name="tipo_sanguineo"/><br/><br/>
+		
+		<button class="waves-effect waves-light btn" type="submit">Salvar</button>
+	
+	</form>
+	
+	<!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
